@@ -19,3 +19,11 @@
     color: black;
 }
 
+.badge-box {
+    height: 5.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    font-weight: 500;
+  }
