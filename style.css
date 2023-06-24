@@ -1,0 +1,450 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: var(--primary-font);
+  list-style: none;
+  line-height: 2rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 140rem;
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+
+/* Primary- container */
+
+.primary-container {
+  position: relative;
+  background: url(./images/Model-3-Main-Hero-Desktop-LHD.png) no-repeat center
+    center/cover;
+  height: 73.5rem;
+  top: 5.28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+}
+
+/* black-bar */
+
+.black-bar {
+  position: absolute;
+  top: 0;
+  width: 98.9vw;
+  background: var(--secondary-color);
+  height: 5.28rem;
+  border: 0.1rem solid #7b7b7c;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: space-between;
+  height: 5.6rem;
+  width: 153.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  z-index: 3;
+}
+
+.navbar-logo {
+  width: 18rem;
+  height: 2.4;
+  display: flex;
+  padding: 0 0 0 4.8rem;
+}
+
+.logo {
+  fill: var(--primary-color);
+  width: 95%;
+  height: 100%;
+}
+
+.nav-types-container {
+  width: 72.37rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 8.2rem;
+}
+
+.car-types {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.car-types li {
+  padding: 0.4rem 1.6rem;
+}
+
+.nav-pages-container {
+  width: 40.61rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2.4rem 0 0;
+}
+
+.nav-pages {
+  display: flex;
+  justify-content: end;
+}
+
+.nav-pages li {
+  padding: 0.4rem 1.6rem;
+}
+
+/* Head content */
+
+.head-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4.8rem;
+  margin-top: 6.8rem;
+  padding: 0 2.4rem;
+}
+
+.head-title {
+  width: 96%;
+  text-align: center;
+  padding: 0 4% 1rem;
+}
+
+.head-title h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.head-link {
+  text-align: center;
+  width: 80%;
+  padding: 1.1rem 2.4rem 1.4rem;
+}
+
+/* head footer */
+
+.head-footer {
+  width: 50rem;
+  height: 15rem;
+  margin-top: 40rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.car-stats {
+  width: 50rem;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.title-one {
+  position: relative;
+}
+
+.title-one::before {
+  position: absolute;
+  left: -1.7rem;
+  top: 0;
+  content: "";
+  display: inline-block;
+  background: url(/images/icons8-speedometer-48.png) no-repeat;
+  background-size: 55% auto;
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.7;
+  fill: white;
+}
+
+.title h2 {
+  font-weight: 600;
+}
+
+.title h3 {
+  padding-top: 0.3rem;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.title-three h2 span::before {
+  content: "\0024";
+}
+.title-three h2 span::after {
+  content: "\0271D";
+  font-size: 1.3rem;
+  vertical-align: top;
+}
+
+.head-footer-btns {
+  height: 30%;
+  width: 50rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: end;
+  margin: 2.5rem 0 3.5rem 0;
+}
+
+.left-btn {
+  transition: background 0.5s;
+  border: none;
+  /* padding-top: 0.9rem ; */
+  cursor: pointer;
+}
+
+.left-btn:hover {
+  background: #b8b5b5;
+  border: none;
+}
+
+.left-btn a {
+  color: black;
+  font-weight: 600;
+}
+
+.right-btn {
+  transition: background-color 0.5s ease-out;
+}
+
+.right-btn:hover {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.right-btn:hover .inner-link {
+  color: black;
+}
+
+.head-footer-par {
+  display: flex;
+  height: 30%;
+  width: 50rem;
+  justify-content: center;
+  align-items: end;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.head-footer-par::before {
+  content: "\0271D";
+  font-size: 0.9rem;
+}
+
+/* design -section */
+
+.design-section-container {
+  position: absolute;
+  top: 788px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.design-section-upper {
+  position: relative;
+  height: 70%;
+  width: 100%;
+  background: url(/images/model-3-hero-a-desktop.png) no-repeat center
+    center/cover;
+  background-size: 70%;
+}
+
+.anime-box-one {
+  position: absolute;
+  top: 16rem;
+  left: 56.5rem;
+  width: 30%;
+  height: 20rem;
+  display: flex;
+  align-items: start;
+}
+
+.anime-box-one span::before {
+  content: "";
+  position: absolute;
+  left: -1.26rem;
+  bottom: 0;
+  border-left: 0.3rem solid black;
+  height: 1rem;
+  animation: box-1-animate 1s forwards 1s;
+}
+
+.anime-box-one span::after {
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  left: -1.5rem;
+  bottom: 0;
+  content: "";
+  border: var(--secondary-color) solid 0.2rem;
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+
+.anime-box-one span h3 {
+  position: absolute;
+  color: var(--primary-color);
+  top: 4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  animation: box-1-text-animate 1s forwards 1s;
+}
+
+@keyframes box-1-animate {
+  to {
+    height: 19rem;
+  }
+}
+
+@keyframes box-1-text-animate {
+  to {
+    top: 0;
+    color: var(--secondary-color);
+  }
+}
+
+.anime-box-two {
+  position: absolute;
+  top: 6.7rem;
+  right: 28.6rem;
+  width: 30%;
+  height: 15rem;
+  display: flex;
+  align-items: start;
+}
+
+.anime-box-two span::before {
+  content: "";
+  position: absolute;
+  left: -1.26rem;
+  bottom: 0;
+  border-left: 0.3rem solid black;
+  height: 1rem;
+  animation: box-2-animate 1s forwards 1s;
+}
+
+.anime-box-two span::after {
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  left: -1.5rem;
+  bottom: 0;
+  content: "";
+  border: var(--secondary-color) solid 0.2rem;
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+
+.anime-box-two span h3 {
+  position: absolute;
+  color: var(--primary-color);
+  top: 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  animation: box-2-text-animate 1s forwards 1s;
+}
+
+@keyframes box-2-animate {
+  to {
+    height: 14rem;
+  }
+}
+
+@keyframes box-2-text-animate {
+  to {
+    top: 0rem;
+    color: var(--secondary-color);
+  }
+}
+
+.anime-box-three {
+  position: absolute;
+  bottom: 14rem;
+  right: 25.7rem;
+  width: 30%;
+  height: 15rem;
+  display: flex;
+  align-items: end;
+}
+
+.anime-box-three span::before {
+  content: "";
+  position: absolute;
+  left: -1.25rem;
+  top: 0.5rem;
+  border-left: 0.3rem solid black;
+  height: 1rem;
+  animation: box-3-animate 1s forwards 1s;
+  animation-direction: alternate;
+}
+
+.anime-box-three span::after {
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  left: -1.5rem;
+  top: 0;
+  content: "";
+  border: var(--secondary-color) solid 0.2rem;
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+
+.anime-box-three span h3 {
+  position: absolute;
+  color: var(--primary-color);
+  bottom: -2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  animation: box-3-text-animate 1s forwards 1s;
+}
+
+@keyframes box-3-animate {
+  to {
+    height: 14rem;
+  }
+}
+
+@keyframes box-3-text-animate {
+  to {
+    bottom: 0;
+    color: var(--secondary-color);
+  }
+}
+
+.design-section-under {
+  height: 30%;
+  width: 100%;
+  background: palevioletred;
+}
