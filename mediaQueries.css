@@ -1,0 +1,99 @@
+@media (max-width: 1430px){
+.nav-types-container {
+display: none;
+}
+.nav-pages-container .nav-pages .shop,
+    .nav-pages-container .nav-pages .account {
+        display: none;
+    }
+    .navbar {
+        padding-top: 3rem;
+    }
+
+
+}
+@media  screen and (max-width: 830px){
+
+    .header-container {
+        margin-top: 0;
+    }
+.black-bar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.first-box {
+    padding: 2rem 0 1rem 0;
+}
+.second-box {
+    padding: 2rem 0 1rem 0;
+}
+.third-box {
+    padding: 2rem 0 1rem 0;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    
+}
+
+@media (max-width: 600px) {
+    .head-footer {
+        position: relative;
+        left: 0;
+        margin: 60rem 200rem 0 0;
+        padding: 0 1rem 0 1rem;
+    }
+    .car-stats {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 2rem;
+    }
+
+    .title-one, .title-two, .title-three {
+        padding-right: 6rem;
+    }
+
+
+}
+
+
+@media (max-width:560px ) {
+    .under-content {
+        width: 90%;
+    }
+    .box-right, .box-left {
+        padding-top: 2rem ;
+    }
+
+    .geographic-section-container {
+        padding: 0.5rem 0 2rem 0.5rem;
+        font-size: 1.8rem;
+    }
+    .nav-pages-container {
+        display: flex;
+        justify-content: start;
+    }
+
+    .head-content {
+        margin-top: 20rem;
+        position: absolute;
+        left: 0;
+    }
+
+
+
+
+}
+}

@@ -12,6 +12,7 @@
     border: solid 0.24rem var(--primary-color);
     padding: 0.4rem 2.4rem;
     border-radius: 0.4rem;
+    margin-right: 2.5rem;
 }
 
 .bg-light {
@@ -27,6 +28,8 @@
     align-items: start;
     font-weight: 500;
   }
+
+
 
 
 

@@ -15,12 +15,12 @@ html {
 body {
   font-size: 1.6rem;
   color: var(--primary-color);
+  height: 100%;
   overflow: auto;
-  height: 240rem;
 }
 
 b {
-  font-size:1.9rem;
+  font-size: 1.9rem;
 }
 
 a {
@@ -39,21 +39,22 @@ strong {
 /* primary-container */
 
 .primary-container {
-  max-height: 100%;
-  max-width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
-/* chat-button */
-
+/* chat-button-------------------------------------------- */
 
 @keyframes pulsing {
   0% {
-    background-color: #ffffff;
-    fill: black;
+    background-color: var(--primary-color);
+    fill: var(--secondary-color);
   }
   100% {
     background-color: #393c41;
@@ -76,6 +77,8 @@ strong {
   justify-content: center;
   animation: pulsing 5s 5s infinite;
   overflow: hidden;
+  min-width: auto;
+  min-height: auto;
 }
 
 .chat-btn-icon {
@@ -86,84 +89,55 @@ strong {
   animation: pulsing 5s 5s infinite;
 }
 
-.chat-btn div {
-  position: fixed;
-  top: 40rem;
-  left: 125rem;
-  transform: translate(-50%, -50%);
-  width: 40rem;
-  height: 50rem;
-  background: var(--primary-color);
-  border: none;
-  display: none;
-  border-radius: 1rem;
-}
-
-.chat-btn.chat-window:target {
-  display: block;
-}
-
-.chat-window:target::before{
-content: '';
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgb( 0, 0, 0, 0.5);
-z-index: -1;
-}
-
-
-.fixed-bar {
-  position: fixed;
-  top: 5rem;
-  left: 0;
-  width: 100%;
-  height: 5rem;
-  background: red;
-  z-index: 6;
-}
-
-/* black-bar */
+/* black-bar ---------------------------------------------*/
 
 .black-bar {
   display: flex;
+  flex-wrap: wrap;
   position: fixed;
   justify-content: space-between;
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to right, #3D4C75 , black);
-  height: 5.28rem;
+  background: linear-gradient(to right, #3d4c75, black);
+  height: 8%;
   border-bottom: 0.1rem solid #7b7b7c;
   z-index: 10;
 }
 
 .first-box {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   background: transparent;
   height: 100%;
   width: 30.33%;
   padding-left: 4rem;
+  min-width: auto;
+  min-height: auto;
 }
 .second-box {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   background: transparent;
   height: 100%;
   width: 33.33%;
+  min-width: auto;
+  min-height: auto;
 }
 .third-box {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   background: transparent;
   height: 100%;
   width: 23.66%;
+  min-width: auto;
+  min-height: auto;
 }
 
 .third-box a {
@@ -186,41 +160,48 @@ z-index: -1;
   opacity: 1;
 }
 
-/* header-container */
+/* header-container ---------------------------------------*/
 
 .header-container {
   margin-top: 5rem;
   background: url(./images/Model-3-Main-Hero-Desktop-LHD.png) no-repeat center
     center/cover;
   height: 100vh;
-  top: 5.28rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
   overflow: hidden;
+  flex-wrap: wrap;
   z-index: 3;
+  min-width: auto;
+  min-height: auto;
 }
 
-/* Navbar */
+/* Navbar ---------------------------------------------------------*/
 
 .navbar {
   display: flex;
+  flex-shrink: 3;
   flex-direction: row;
   align-content: flex-start;
   justify-content: space-between;
   height: 5.6rem;
-  width: 153.5rem;
+  width: 100%;
   font-weight: 600;
   font-size: 1.5rem;
   z-index: 3;
 }
 
 .navbar-logo {
+  display: flex;
   width: 18rem;
   height: 2.4;
   display: flex;
   padding: 0 0 0 4.8rem;
+  min-width: auto;
+  min-height: auto;
 }
 
 .logo {
@@ -236,11 +217,15 @@ z-index: -1;
   justify-content: flex-end;
   align-items: center;
   margin-left: 8.2rem;
+  min-width: auto;
+  min-height: auto;
 }
 
 .car-types {
   width: 100%;
   display: flex;
+  min-width: auto;
+  min-height: auto;
   justify-content: end;
 }
 
@@ -251,6 +236,8 @@ z-index: -1;
 .nav-pages-container {
   width: 40.61rem;
   display: flex;
+  min-width: auto;
+  min-height: auto;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
@@ -259,6 +246,8 @@ z-index: -1;
 
 .nav-pages {
   display: flex;
+  min-width: auto;
+  min-height: auto;
   justify-content: end;
 }
 
@@ -266,10 +255,12 @@ z-index: -1;
   padding: 0.4rem 1.6rem;
 }
 
-/* Head content */
+/* Head content -----------------------------------------------*/
 
 .head-content {
   display: flex;
+  min-width: auto;
+  min-height: auto;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -318,7 +309,7 @@ z-index: -1;
   opacity: 1;
 }
 
-/* head footer */
+/* head footer --------------------------------------------------- */
 
 .head-footer {
   width: 50rem;
@@ -326,6 +317,8 @@ z-index: -1;
   margin-top: 42rem;
   text-align: center;
   display: flex;
+  min-width: auto;
+  min-height: auto;
   flex-direction: column;
   align-content: center;
   justify-content: space-around;
@@ -335,6 +328,8 @@ z-index: -1;
   width: 50rem;
   height: 30%;
   display: flex;
+  min-width: auto;
+  min-height: auto;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -354,7 +349,7 @@ z-index: -1;
   width: 4rem;
   height: 4rem;
   opacity: 0.7;
-  fill: white;
+  fill: var(--primary-color);
 }
 
 .title h2 {
@@ -380,6 +375,8 @@ z-index: -1;
   height: 30%;
   width: 50rem;
   display: flex;
+  min-width: auto;
+  min-height: auto;
   justify-content: space-between;
   align-content: end;
   margin: 2.5rem 0 3.5rem 0;
@@ -398,7 +395,7 @@ z-index: -1;
 }
 
 .left-btn a {
-  color: black;
+  color: var(--secondary-color);
   font-weight: 600;
 }
 
@@ -414,11 +411,13 @@ z-index: -1;
 }
 
 .right-btn:hover .inner-link {
-  color: black;
+  color: var(--secondary-color);
 }
 
 .head-footer-par {
   display: flex;
+  min-width: auto;
+  min-height: auto;
   height: 30%;
   width: 50rem;
   justify-content: center;
@@ -434,13 +433,15 @@ z-index: -1;
   content: "\0271D";
   font-size: 0.9rem;
 }
-/* ----------------------------------------------- */
+/* ----------------------------------------------------------- */
 
 /* design -section */
 
 .design-section-container {
   top: 788px;
   display: flex;
+  min-width: auto;
+  min-height: auto;
   flex-direction: column;
   width: 100%;
   height: 100rem;
@@ -464,6 +465,8 @@ z-index: -1;
   width: 30%;
   height: 20rem;
   display: flex;
+  min-width: auto;
+  min-height: auto;
   align-items: start;
 }
 
@@ -472,7 +475,7 @@ z-index: -1;
   position: absolute;
   left: -1.26rem;
   bottom: 0;
-  border-left: 0.3rem solid black;
+  border-left: 0.3rem solid var(--secondary-color);
   height: 1rem;
   animation: box-1-line-animate 3s forwards 1s;
   animation-iteration-count: infinite;
@@ -520,6 +523,8 @@ z-index: -1;
   width: 30%;
   height: 15rem;
   display: flex;
+  min-width: auto;
+  min-height: auto;
   align-items: start;
 }
 
@@ -528,7 +533,7 @@ z-index: -1;
   position: absolute;
   left: -1.26rem;
   bottom: 0;
-  border-left: 0.3rem solid black;
+  border-left: 0.3rem solid var(--secondary-color);
   height: 1rem;
   animation: box-2-animate 3s forwards 1s;
   animation-iteration-count: infinite;
@@ -576,6 +581,8 @@ z-index: -1;
   width: 30%;
   height: 15rem;
   display: flex;
+  min-width: auto;
+  min-height: auto;
   align-items: end;
 }
 
@@ -584,7 +591,7 @@ z-index: -1;
   position: absolute;
   left: -1.25rem;
   top: 0.5rem;
-  border-left: 0.3rem solid black;
+  border-left: 0.3rem solid var(--secondary-color);
   height: 1rem;
   animation: box-3-animate 3s forwards 1s;
   animation-iteration-count: infinite;
@@ -625,13 +632,15 @@ z-index: -1;
   }
 }
 
-/* design-section-under */
+/* design-section-under -------------------------------------------- */
 
 .design-section-under {
   height: 20%;
   width: 100%;
   margin-top: 2.8rem;
   display: flex;
+  min-width: auto;
+  min-height: auto;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -679,6 +688,8 @@ z-index: -1;
   width: 72%;
   height: 40%;
   display: flex;
+  min-width: auto;
+  min-height: auto;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
@@ -711,6 +722,8 @@ z-index: -1;
   width: 19.85rem;
   padding: 2.4rem 0;
   display: flex;
+  min-width: auto;
+  min-height: auto;
   flex-direction: column;
   justify-content: space-around;
 }
